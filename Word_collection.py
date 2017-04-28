@@ -11,11 +11,9 @@ for key in string:
         the_dict[key] +=1
     else:
         the_dict[key] = 1
-    sorted(the_dict)
+
 # Loop for printing
-
-for string in the_dict:
-    print("{:<10} : {}".format(string, str(the_dict[string])))
-
+for string in sorted(the_dict):
+    print("{:<12} : {}".format(string, str(the_dict[string])))
 
 
